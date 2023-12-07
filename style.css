@@ -1,0 +1,221 @@
+* {box-sizing: border-box;}
+html {margin:0;padding:0; scroll-behavior: smooth;
+      background-color: black;
+    color:white;
+  font-size:medium;}
+body {margin:0px; padding:0px;}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ 
+.flex>* {margin: 0;
+    height:fit-content;
+}
+
+p {padding: 5px;}
+
+h2 {margin: 20px; font-family: Arial, Helvetica, sans-serif;}
+
+article, section  {background-color: rgb(97, 97, 209); border-radius: 10px; text-align: justify;}
+
+a {color:white;}
+
+
+
+/*header*/
+header {
+    padding: 20px;
+    margin: 0px;
+    background-image: url("12dzs2-622749dfd9047.jpg"); background-size: cover; border: bottom 3px solid darkgoldenrod;
+    text-align: center;
+    font-size: 2em;
+    color: darkgoldenrod;
+    font-family:Arial, Helvetica, sans-serif;
+}
+header h1 {
+    padding: 10px 0;
+    flex: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+
+/*MENÜ*/
+nav {
+    flex: 1 1 95%;
+    padding: 0;
+}
+
+nav ul {list-style-type: none; 
+        margin:10px; 
+        padding: 10px; ; }
+
+nav li a {
+    display: block;
+    padding: 10px;
+    margin: 4px 6px;
+    text-decoration: none;
+    color: lightgray;
+    background-color:darkgoldenrod;
+    border-radius: 5px;
+    text-align: center;
+    }
+
+
+nav li a:hover, #current a:hover {background-color: lightgray; color:gold;}
+nav li a:link{background-color:darkgoldenrod; color:black;}
+li#current a {background-color:darkgoldenrod; color: rgb(97, 97, 209);}
+
+
+
+/*---1.---*/
+p.dzsu_idezet {
+    font-style: italic;
+    margin: 25px 0 10px 0;
+    padding: 0;
+    text-align: center;
+}
+p.szerző {
+    margin: 20px;
+    padding: 10px;
+    text-align: right;
+}
+
+div.ismerteto {
+    flex-basis: 90%;
+    margin: 40px;
+    font: size 1.2em;}
+
+div.eredet {
+    margin: 40px;
+    flex-basis: 90%;}
+
+div.karrier {
+  flex-basis: 90%; 
+  margin: 20px;}
+
+img.holdudvar {
+    float:right;
+    height: 150px;
+    border-radius: 10px;
+    margin: 30px;}
+
+img.bro{float:left;
+        border-radius: 5px;
+        margin: 10px;
+        height:auto;
+        }
+h3.album{font-size:3em;}
+table{vertical-align: middle;
+      text-align:center;
+    margin-right:auto;
+  margin-left:auto;
+  font-size: 2.5em;}
+  
+td{margin:10px;
+padding:20px;}
+
+aside.hivatalos{margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                font-size: 20px;}
+
+aside.nev{margin-left: 80%;
+                  margin-right: 0;
+                  font-size: 15px;
+                }
+
+/*Tiirtatok*/
+
+div.mind{margin:80px;
+        text-align: center;
+        border-radius: 10%;
+      padding:0 30px;
+      font-size:30px;}
+
+
+
+
+
+
+/*Vélemény*/
+
+
+
+article.velemenysor {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px ;
+    padding: 5px;
+    background-color:black;
+    color: #fdfcdc;
+    border-radius: 10px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+input {border:2px solid gray; border-radius: 3px; padding:  5px; margin: 5px; background-color: #4655c4;}
+
+input.gomb {padding: 5px 10px;}
+input:hover.gomb {background-color:  rgb(97, 97, 209);; color: white;}
+
+label.error {color: white}
+
+/*Fotóalbum*/
+.galleria-container {margin:auto;}
+
+
+/*Lábléc*/
+footer {
+    padding: 10px;
+    margin: 0;
+    background-image: url("12dzs2-622749dfd9047.jpg"); background-size: cover;
+    text-align: center;
+    color: rgb(255, 255, 255)}
+
+
+
+
+
+@media all and (min-width: 600px) {
+    /*tablet*/
+    nav {
+        flex-basis: 20%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    article {flex-basis: 50%;}
+
+
+}
+
+@media all and (min-width: 768px) {
+    /*számítógép*/
+    nav {
+        flex-basis: 20%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    article {
+        flex-basis: 70%;
+    }
+
+
+}

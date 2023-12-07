@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Kolarik Laura">
+    <meta name="copyright" content="Tanulási célra">
+    <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Vélemények</title>
+    <link rel="icon" href="classic-loader.gif" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Dzsúdló</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="pop_eloadok.html">Kezdőlap</a>
+                </li>
+                <li>
+                    <a href="koncertek.html">Koncertek</a>
+                </li>
+                <li id="current">
+                    <a href="#">Vélemények</a></li>
+                <li>
+                    <a href="tiirtatok.html">Ti írtátok</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article class="velemenysor">
+<h2>Kérlek írd meg nekünk hallgatói véleményed!</h2>
+</article>
+<article class="kerdesek">
+<form id="velemeny" method="post" action="http://szamtud.uni-corvinus.hu/receive.php" novalidate="novalidate">
+    <label> Melyik a kedvenc számod a Fotofóbia albumról?<br>
+        <input type="text" list="pelda" name=ked_foto  placeholder="Írd be a zene címét!" >
+    </label>
+        <datalist id="pelda">
+            <option value="Nyugi"></option>
+            <option value="Gyere be"></option>
+            <option value="Sprint"></option>
+            <option value="Lej"></option>
+        </datalist>
+        
+        <br>
+        <br>
+    
+        <label>Mikor hallgattad a legtöbbet az új albumot?<br> 
+            <input type="date" name="datum" >
+        </label>
+        <br><br>
+        <label> Milyen színű legyen az új merch?
+            <input type="color" name="szin">
+        </label>
+        <br>
+        <br>
+        <label> Hány csillagra értékelnéd az albumokat? (1-5) <br>
+        1 <input type="range" min="1" max="5" step="1" value="3" name="csuszka"> 5
+        </label>
+        <br>
+        <br>
+
+        <label>Melyik közreűködővel közös számot szereted a legjobban?<br>
+        <input type="text" list="pelda2" name="kozremukodo">
+        </label> 
+        <datalist id="pelda2">
+            <option value="Bálnák"></option>
+            <option value="Várnék"></option>
+            <option value="Szürke"></option>
+            <option value="Sajnálom"></option>
+        </datalist>
+        <br>
+
+        Szerinted kivel/kikkel legyen új közös zenéje?<br>
+    <label>
+        <input type="checkbox" name="krubi" value="ok" id="krubi">Krúbi</label> 
+        <br>
+    <label>
+        <input type="checkbox" name="danny" value="ok" id="danny">T.Danny
+    </label> 
+    <br>
+    <label>
+        <input type="checkbox" name="valmar" value="ok" id="valmar">Valmar
+    </label> 
+    <br>
+    <label>
+        <input type="checkbox" name="beton" value="ok" id="beton">Beton Hofi
+    </label> 
+    <br>
+    <label>
+        <input type="checkbox" name="manuel" value="ok" id="manuel">Manuel
+    </label> 
+    <br>
+    <label>
+        <input type="checkbox" name="frakk" value="ok" id="frakk">Lil Frakk
+    </label> 
+    <br>
+    <label>
+        <input type="checkbox" name="bsw" value="ok" id="bsw">BSW
+    </label> 
+    <br><br><br>
+
+         Melyik koncerten voltál utoljára?<br>
+    <label><input type="radio" name="konci" value="bp57">Budapest Park 05.07.</label><br>
+    <label><input type="radio" name="konci" value="plazs">Plázs 07.06.</label><br>
+    <label><input type="radio" name="konci" value="bp713">Budapest Park 07.13.</label><br>
+    <label><input type="radio" name="konci" value="corvo" id="harmadik_jo">Corvinus Gólyabál</label><br>
+
+
+    <hr>
+
+    <p>
+        Beküldő adatai:<br>
+        <label>
+            Név: <input type="text" name="nev" placeholder="név" size="20" maxlength="40" id="nev">
+        </label>
+        <br>
+        <label>
+            Email cím: <input type="email" name="email" placeholder="email" id="email">
+        </label>
+        <br>
+        <label>
+            Telefonszám: <input type="tel" name="telszam" value="06-" size="14" maxlength="14" id="telszam">
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="hirlevel" value="igen" checked=""> <em>Értesítést kérek a koncertekről.</em>
+        </label>
+    </p>
+
+    <p>
+        <input type="submit" value="Beküldés" class="gomb" id="mybutton">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="Visszaállít" class="gomb"><br>
+    </p>
+
+</form>
+</article>
+<footer>
+    <aside class="hivatalos">
+        Nem a hivatalos weboldal.
+    </aside>
+    <br>
+    <aside class="nev">Kolarik Laura 2023</aside>
+</footer>
+</body>
+</html>
